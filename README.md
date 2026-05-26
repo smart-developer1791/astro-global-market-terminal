@@ -87,8 +87,8 @@ astro-global-market-terminal/
 │   ├── pages/
 │   │   ├── index.astro
 │   │   └── robots.txt.ts
-│   └── store/
-│       └── marketStore.ts
+│   ├── store/
+│   │   └── marketStore.ts
 │   └── styles/
 │       └── global.css
 ├── .gitignore
