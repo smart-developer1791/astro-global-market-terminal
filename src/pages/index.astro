@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Ticker from '../components/Ticker.svelte';
+import Sidebar from '../components/Sidebar.vue';
+import MainChart from '../components/MainChart.tsx';
+---
+
+<Layout title="Global Market Terminal | Astro Islands">
+  <main class="flex flex-col h-full w-full max-h-screen overflow-hidden">
+    <!-- Svelte Island: High-frequency reactive ticker -->
+    <Ticker client:load />
+    
+    <div class="flex flex-col md:flex-row flex-1 overflow-hidden min-h-0">
+      <!-- Vue Island: Reactive sidebar for complex state -->
+      <Sidebar client:load />
+      
+      <!-- React Island: Advanced data visualization -->
+      <MainChart client:load />
+    </div>
+  </main>
+</Layout>

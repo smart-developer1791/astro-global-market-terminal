@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@theme {
+  --color-market-up: #10b981;
+  --color-market-down: #ef4444;
+  --color-market-bg: #0f172a;
+  --color-market-panel: #1e293b;
+  --color-market-accent: #3b82f6;
+  --color-market-text: #f8fafc;
+  --color-market-muted: #94a3b8;
+}
+
+body {
+  @apply bg-market-bg text-market-text font-sans antialiased overflow-x-hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
